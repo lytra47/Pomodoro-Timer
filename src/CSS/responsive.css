@@ -1,0 +1,59 @@
+@media (max-width: 500px) {
+  .Navbar_Common ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .Navbar_Common ul li {
+    color: white !important;
+    background-color: #0E0B16 !important;
+  }
+}
+@media (max-width: 767px) {
+  .Navbar_Common {
+    margin-top: 10px;
+    padding: 0;
+    font-weight: 400;
+    font-size: large;
+  }
+  .Navbar_Common ul {
+    width: auto;
+    justify-content: space-evenly;
+  }
+  .Navbar_Common ul li {
+    background-color: white;
+    color: #0E0B16;
+    padding-block: 6px;
+    padding-inline: 16px;
+    border-radius: 50px;
+  }
+  .pomodoro_main_wrapper {
+    background-color: #0E0B16;
+  }
+  .change_timer {
+    padding-top: 15%;
+  }
+  .change_timer button {
+    display: block;
+    margin: auto;
+    width: 250px;
+    font-size: 17px;
+    margin-top: 20px;
+  }
+  .change_timer .left, .change_timer .right, .change_timer .center {
+    border-radius: 7px;
+  }
+  .info_wrapper {
+    margin-top: 300px;
+  }
+}
+@media (max-width: 1200px) {
+  .change_timer {
+    padding-top: 1%;
+  }
+  .change_timer button {
+    margin: auto;
+    width: 150px;
+    font-size: 17px;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=responsive.css.map */
