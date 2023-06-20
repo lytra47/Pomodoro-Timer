@@ -34,6 +34,7 @@ function Pomodoro() {
     const data = await res.json();
     setAdvice(data.slip.advice);
   };
+  getAdvice();
 
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60)
@@ -88,7 +89,7 @@ function Pomodoro() {
           {/* 25 MIN TIMER/////////////////////////////////////// */}
           <div className="pomodoro_sub_wrapper">
             <div className="pomodoro_time">{formatTime(time)}</div>
-            <div className="pomodoro_buttons">
+            <div className="pomodoro_buttons_pause">
               {!isRunning ? (
                 <button
                   className="left"
@@ -99,7 +100,7 @@ function Pomodoro() {
                 </button>
               ) : (
                 <button
-                  className="left"
+                  className="left pause"
                   onClick={handlePause}
                   disabled={time === 0}
                 >
@@ -115,7 +116,7 @@ function Pomodoro() {
                 Reset
               </button>
             </div>
-            <div className="change_timer">
+            <div className="pomodoro_change_timer">
               <button
                 onClick={() => {
                   changeTimer(1500);
@@ -124,7 +125,7 @@ function Pomodoro() {
                 }}
                 className="left"
               >
-                25 mins timer
+                25 mins work
               </button>
               <button
                 onClick={() => {
@@ -133,7 +134,7 @@ function Pomodoro() {
                 }}
                 className="center"
               >
-                5 mins short break
+                5 mins break
               </button>
               <button
                 onClick={() => {
@@ -145,10 +146,11 @@ function Pomodoro() {
                 15 mins break
               </button>
             </div>
+          </div>
+          <div className="pomodoro_sub_wrapper_advice">
             <button className="advicebutton" onClick={getAdvice}>
-              Advice.
+              Advice
             </button>
-            <h6>Advice:</h6>
             <div className="advice">{advice}</div>
           </div>
         </div>
@@ -157,7 +159,7 @@ function Pomodoro() {
         {/* info div */}
         <div className="info_wrapper">
           <div>
-            <h3>Pomodoro Technique</h3>
+            <h3 className="info_heading">Pomodoro Technique</h3>
 
             <div className="info_content">
               The Pomodoro Technique is a time management method developed by

@@ -1,69 +1,16 @@
-$common_mobile_bg: #0e0b16;
+@media (min-width: 800px) {
+  .pomodoro_buttons_pause {
+    margin-bottom: 3em;
+  }
 
-@media (max-width: 500px) {
-  .Navbar_Common {
-    ul {
-      display: flex;
-      flex-direction: column;
-      li {
-        color: white !important;
-        background-color: $common_mobile_bg !important;
-      }
+  .pomodoro_change_timer {
+    button {
+      padding: 2em;
+      font-size: 1.1em;
     }
+    padding-inline: 4em;
   }
 }
 
-@media (max-width: 767px) {
-  .Navbar_Common {
-    margin-top: 10px;
-    padding: 0;
-    font-weight: 400;
-    font-size: large;
-    ul {
-      width: auto;
-      justify-content: space-evenly;
-      li {
-        background-color: white;
-        color: $common_mobile_bg;
-        padding-block: 6px;
-        padding-inline: 16px;
-        border-radius: 50px;
-      }
-    }
-  }
-  .pomodoro_main_wrapper {
-    background-color: $common_mobile_bg;
-  }
-
-  .change_timer {
-    padding-top: 15%;
-    button {
-      display: block;
-      margin: auto;
-      width: 250px;
-      font-size: 17px;
-      margin-top: 20px;
-    }
-    .left,
-    .right,
-    .center {
-      border-radius: 7px;
-    }
-  }
-
-  .info_wrapper {
-    margin-top: 300px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .change_timer {
-    padding-top: 1%;
-    button {
-      margin: auto;
-      width: 150px;
-      font-size: 17px;
-      margin-top: 20px;
-    }
-  }
+@media (max-width: 1980px) {
 }

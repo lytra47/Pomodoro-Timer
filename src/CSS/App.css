@@ -1,119 +1,103 @@
-body {
-  background-color: #0e0b16;
-  color: white;
-}
-
 * {
   margin: 0;
   padding: 0;
 }
 
-.Navbar_Common {
-  padding-block: 10px;
-  color: white;
-  font-weight: 500;
-  font-size: larger;
-}
-.Navbar_Common .nodecoration {
-  text-decoration: none;
-  color: inherit;
-}
-.Navbar_Common ul {
-  text-align: center;
-  display: flex;
-  width: 30%;
-  margin: auto;
-  justify-content: space-between;
-}
-.Navbar_Common ul li {
-  text-decoration: none;
-  display: inline-block;
-}
-
-.info_wrapper {
-  padding-inline: 80px;
-  padding-top: 27px;
-  padding-block: 50px;
-  margin-inline: auto;
-  margin-bottom: 50px;
-  margin-top: 0px;
-  width: 77%;
-  padding-block: 10%;
-  border-radius: 7px;
-}
-.info_wrapper header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.info_wrapper h3 {
-  margin-bottom: 20px;
-}
-.info_wrapper .info_content {
-  text-align: justify;
-  font-size: large;
-  margin-bottom: 27px;
+body {
+  background-color: #f1f3f3;
 }
 
 .pomodoro_main_wrapper {
-  background-color: #292929;
-  margin-inline: auto;
   text-align: center;
-  font-size: 100px;
-  font-weight: 500;
-  margin-top: 30px;
-  width: 77%;
-  padding-top: 1%;
-  padding-bottom: 17%;
-  height: 500px;
+  background-color: #e8e7ec;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 4em;
+  padding: 2em;
   border-radius: 7px;
+  box-shadow: 0 0 15px #bebec2;
 }
-.pomodoro_main_wrapper .pomodoro_buttons button {
-  padding: 20px;
-  width: 100px;
-  border: none;
-  font-size: 17px;
+.pomodoro_main_wrapper .pomodoro_time {
+  font-size: 7em;
+  font-weight: 700;
 }
-.pomodoro_main_wrapper .pomodoro_buttons button:hover {
-  background-color: #a239ca;
+.pomodoro_main_wrapper .pomodoro_buttons_pause {
+  display: flex;
+  justify-content: space-evenly;
 }
-.pomodoro_main_wrapper .pomodoro_buttons .left {
-  border-radius: 7px 0px 0px 7px;
-}
-.pomodoro_main_wrapper .pomodoro_buttons .right {
-  border-radius: 0px 7px 7px 0;
-}
-.pomodoro_main_wrapper button {
-  font-size: 20px;
-  font-weight: 500;
-  padding: 30px;
-  width: 300px;
-  border: none;
-}
-.pomodoro_main_wrapper button:hover {
-  background-color: #a239ca;
-}
-.pomodoro_main_wrapper .left {
-  border-radius: 7px 0px 0px 7px;
-}
-.pomodoro_main_wrapper .center {
-  border-radius: 0;
-}
-.pomodoro_main_wrapper .right {
-  border-radius: 0px 7px 7px 0;
-}
-.pomodoro_main_wrapper h6 {
-  font-size: 30px;
-  margin-top: 30px;
-}
-.pomodoro_main_wrapper .advice {
-  margin-inline: 70px;
-  margin-top: 20px;
-  font-size: 20px;
-}
-.pomodoro_main_wrapper .advicebutton {
-  right: 0;
-  font-size: 20px;
-  width: 150px;
-  padding: 10px;
+.pomodoro_main_wrapper .pomodoro_buttons_pause button {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  font-size: 1.7em;
+  padding: 0.7em 1.2em;
+  width: 5em;
   border-radius: 7px;
+  border: none;
+  box-shadow: 0 0 15px #adaeae;
+}
+.pomodoro_main_wrapper .pomodoro_buttons_pause .pause {
+  background-color: #696969;
+}
+.pomodoro_main_wrapper .pomodoro_change_timer {
+  margin-top: 2em;
+}
+.pomodoro_main_wrapper .pomodoro_change_timer button {
+  width: 33%;
+  padding: 1em;
+  border: none;
+  background-color: black;
+  color: #fff;
+}
+.pomodoro_main_wrapper .pomodoro_change_timer .left {
+  border-radius: 7px 0 0 7px;
+}
+.pomodoro_main_wrapper .pomodoro_change_timer .center {
+  border-inline: solid 1px rgb(217, 217, 217);
+}
+.pomodoro_main_wrapper .pomodoro_change_timer .right {
+  border-radius: 0 7px 7px 0;
+}
+
+.pomodoro_sub_wrapper {
+  padding-bottom: 2em;
+}
+
+.pomodoro_sub_wrapper_advice {
+  padding-block: 0.5em;
+}
+.pomodoro_sub_wrapper_advice button {
+  padding: 1em 2em;
+  margin-bottom: 2em;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  background-color: black;
+}
+.pomodoro_sub_wrapper_advice .advice {
+  font-size: 1.5em;
+}
+
+.info_wrapper {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 5em;
+  padding: 2em;
+  background-color: #edeae7;
+  border-radius: 7px;
+  box-shadow: 0 0 15px #d1d4d5;
+}
+.info_wrapper .info_heading {
+  text-align: center;
+  margin-bottom: 1.2em;
+  font-size: 1.7em;
+}
+.info_wrapper .info_content {
+  text-align: justify;
+  margin-bottom: 2em;
+}
+.info_wrapper h3 {
+  text-align: center;
+  margin-bottom: 0.7em;
 }/*# sourceMappingURL=App.css.map */
