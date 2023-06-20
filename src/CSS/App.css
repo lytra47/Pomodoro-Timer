@@ -1,5 +1,5 @@
 body {
-  background-color: #0E0B16;
+  background-color: #0e0b16;
   color: white;
 }
 
@@ -9,7 +9,7 @@ body {
 }
 
 .Navbar_Common {
-  padding-block: 17px;
+  padding-block: 10px;
   color: white;
   font-weight: 500;
   font-size: larger;
@@ -60,10 +60,11 @@ body {
   text-align: center;
   font-size: 100px;
   font-weight: 500;
-  margin-top: 70px;
+  margin-top: 30px;
   width: 77%;
-  padding-block: 10%;
-  height: 400px;
+  padding-top: 1%;
+  padding-bottom: 17%;
+  height: 500px;
   border-radius: 7px;
 }
 .pomodoro_main_wrapper .pomodoro_buttons button {
@@ -73,7 +74,7 @@ body {
   font-size: 17px;
 }
 .pomodoro_main_wrapper .pomodoro_buttons button:hover {
-  background-color: #A239CA;
+  background-color: #a239ca;
 }
 .pomodoro_main_wrapper .pomodoro_buttons .left {
   border-radius: 7px 0px 0px 7px;
@@ -89,7 +90,7 @@ body {
   border: none;
 }
 .pomodoro_main_wrapper button:hover {
-  background-color: #A239CA;
+  background-color: #a239ca;
 }
 .pomodoro_main_wrapper .left {
   border-radius: 7px 0px 0px 7px;
@@ -99,4 +100,20 @@ body {
 }
 .pomodoro_main_wrapper .right {
   border-radius: 0px 7px 7px 0;
+}
+.pomodoro_main_wrapper h6 {
+  font-size: 30px;
+  margin-top: 30px;
+}
+.pomodoro_main_wrapper .advice {
+  margin-inline: 70px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.pomodoro_main_wrapper .advicebutton {
+  right: 0;
+  font-size: 20px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 7px;
 }/*# sourceMappingURL=App.css.map */

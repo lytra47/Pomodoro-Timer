@@ -5,7 +5,7 @@
   }
   .Navbar_Common ul li {
     color: white !important;
-    background-color: #0E0B16 !important;
+    background-color: #0e0b16 !important;
   }
 }
 @media (max-width: 767px) {
@@ -21,13 +21,13 @@
   }
   .Navbar_Common ul li {
     background-color: white;
-    color: #0E0B16;
+    color: #0e0b16;
     padding-block: 6px;
     padding-inline: 16px;
     border-radius: 50px;
   }
   .pomodoro_main_wrapper {
-    background-color: #0E0B16;
+    background-color: #0e0b16;
   }
   .change_timer {
     padding-top: 15%;
@@ -39,7 +39,9 @@
     font-size: 17px;
     margin-top: 20px;
   }
-  .change_timer .left, .change_timer .right, .change_timer .center {
+  .change_timer .left,
+  .change_timer .right,
+  .change_timer .center {
     border-radius: 7px;
   }
   .info_wrapper {

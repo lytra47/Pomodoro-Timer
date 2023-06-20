@@ -1,133 +1,130 @@
-body{
-    background-color: #0E0B16;
-    color: white;
+body {
+  background-color: #0e0b16;
+  color: white;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar_Common {
+  .nodecoration {
+    text-decoration: none;
+    color: inherit;
   }
 
-.Navbar_Common{
-    .nodecoration{
-
-        text-decoration: none;
-        color: inherit;
-    }
-
-    padding-block: 17px;
-    color: white;
-    font-weight: 500;
-    font-size: larger;
-    ul{
-        text-align: center;
-        display: flex;
-        width: 30%;
-        margin: auto;
-
-        justify-content: space-between;
-        li{
-            text-decoration: none;
-            display: inline-block;
-        }
-    }
-}
-
-
-.info_wrapper{
-
-    padding-inline: 80px ;
-    padding-top: 27px;
-    padding-block: 50px;
-    margin-inline: auto;
-    margin-bottom: 50px;
-    margin-top: 0px;
-    width: 77%;
-    padding-block:10% ;
-    header{
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    h3{
-        margin-bottom: 20px
-    }
-    .info_content{
-        text-align: justify ;
-        font-size: large;
-        margin-bottom: 27px
-    };
-    
-   
-    border-radius:7px;
-}
-
-.pomodoro_main_wrapper{
-    background-color: #292929;
-    margin-inline: auto;
+  padding-block: 10px;
+  color: white;
+  font-weight: 500;
+  font-size: larger;
+  ul {
     text-align: center;
-    font-size: 100px;
+    display: flex;
+    width: 30%;
+    margin: auto;
+
+    justify-content: space-between;
+    li {
+      text-decoration: none;
+      display: inline-block;
+    }
+  }
+}
+
+.info_wrapper {
+  padding-inline: 80px;
+  padding-top: 27px;
+  padding-block: 50px;
+  margin-inline: auto;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  width: 77%;
+  padding-block: 10%;
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+  .info_content {
+    text-align: justify;
+    font-size: large;
+    margin-bottom: 27px;
+  }
+
+  border-radius: 7px;
+}
+
+.pomodoro_main_wrapper {
+  background-color: #292929;
+  margin-inline: auto;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 500;
+  margin-top: 30px;
+
+  width: 77%;
+  padding-top: 1%;
+  padding-bottom: 17%;
+  height: 500px;
+  border-radius: 7px;
+
+  .pomodoro_buttons {
+    button {
+      padding: 20px;
+      width: 100px;
+      border: none;
+      font-size: 17px;
+    }
+    button:hover {
+      background-color: #a239ca;
+    }
+
+    .left {
+      border-radius: 7px 0px 0px 7px;
+    }
+    .right {
+      border-radius: 0px 7px 7px 0;
+    }
+  }
+
+  button {
+    font-size: 20px;
     font-weight: 500;
-    margin-top:70px;
+    padding: 30px;
+    width: 300px;
+    border: none;
+  }
+  button:hover {
+    background-color: #a239ca;
+  }
 
+  .left {
+    border-radius: 7px 0px 0px 7px;
+  }
 
-    width: 77%;
-    padding-block:10% ;
-    height: 400px;
-    border-radius:7px;
-
-    .pomodoro_buttons{
-
-        button{
-            padding: 20px;
-            width: 100px;
-            border: none;
-            font-size: 17px;
-        }
-        button:hover{
-            background-color: #A239CA;;
-        }
-
-        
-        .left{
-            border-radius:  7px  0px 0px 7px;
-
-        }
-        .right{
-            border-radius:  0px  7px 7px 0;
-
-        }
-        
-
-    }
-
-    button{
-        font-size: 20px;
-        font-weight: 500;
-        padding: 30px;
-        width: 300px;
-        border: none;
-        
-    }
-    button:hover{
-        background-color: #A239CA;;
-    }
-
-    
-    .left{
-        border-radius:  7px  0px 0px 7px;
-
-    }
-    
-    .center{
-        border-radius:  0;
-
-    }
-    .right{
-        border-radius:  0px  7px 7px 0;
-
-    }
-
-
-
-
+  .center {
+    border-radius: 0;
+  }
+  .right {
+    border-radius: 0px 7px 7px 0;
+  }
+  h6 {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .advice {
+    margin-inline: 70px;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .advicebutton {
+    right: 0;
+    font-size: 20px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 7px;
+  }
 }

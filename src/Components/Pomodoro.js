@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import soundFile from "../Files/notify.wav";
+import soundFile from "../Audio/notify.wav";
 
 function Pomodoro() {
   //  01 min = 60 secs
@@ -12,6 +12,7 @@ function Pomodoro() {
   const [time, setTime] = useState(1500);
   const [isRunning, setIsRunning] = useState(false);
   const [currentSetTime, setCurrentSetTime] = useState(1500);
+  const [advice, setAdvice] = useState("");
 
   useEffect(() => {
     let interval = null;
@@ -27,6 +28,12 @@ function Pomodoro() {
 
     return () => clearInterval(interval);
   }, [isRunning, time]);
+
+  const getAdvice = async () => {
+    const res = await fetch("https://api.adviceslip.com/advice");
+    const data = await res.json();
+    setAdvice(data.slip.advice);
+  };
 
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60)
@@ -99,7 +106,12 @@ function Pomodoro() {
                   Pause
                 </button>
               )}
-              <button className="right" onClick={handleReset}>
+              <button
+                className="right"
+                onClick={() => {
+                  handleReset();
+                }}
+              >
                 Reset
               </button>
             </div>
@@ -107,6 +119,7 @@ function Pomodoro() {
               <button
                 onClick={() => {
                   changeTimer(1500);
+                  setIsRunning(false);
                   // setIsRunning(false); for reseting on click timer change.
                 }}
                 className="left"
@@ -116,6 +129,7 @@ function Pomodoro() {
               <button
                 onClick={() => {
                   changeTimer(300);
+                  setIsRunning(false);
                 }}
                 className="center"
               >
@@ -124,12 +138,18 @@ function Pomodoro() {
               <button
                 onClick={() => {
                   changeTimer(900);
+                  setIsRunning(false);
                 }}
                 className="right"
               >
                 15 mins break
               </button>
             </div>
+            <button className="advicebutton" onClick={getAdvice}>
+              Advice.
+            </button>
+            <h6>Advice:</h6>
+            <div className="advice">{advice}</div>
           </div>
         </div>
         {/* main div end */}
