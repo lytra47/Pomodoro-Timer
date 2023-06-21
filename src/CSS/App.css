@@ -7,6 +7,11 @@ body {
   background-color: #f1f3f3;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .pomodoro_main_wrapper {
   text-align: center;
   background-color: #e8e7ec;
@@ -100,4 +105,23 @@ body {
 .info_wrapper h3 {
   text-align: center;
   margin-bottom: 0.7em;
+}
+
+.Navbar_Common {
+  padding: 0.7em 4em 0.7em 4em;
+}
+.Navbar_Common ul {
+  display: flex;
+}
+.Navbar_Common ul li {
+  text-decoration: none;
+  display: inline-block;
+}
+.Navbar_Common ul .Navbar_brand {
+  width: 70%;
+}
+.Navbar_Common ul .Navbar_links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
 }/*# sourceMappingURL=App.css.map */
