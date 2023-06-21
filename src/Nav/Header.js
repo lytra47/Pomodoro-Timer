@@ -18,12 +18,12 @@ function Header() {
         </ul>
       </div> */}
 
-      <Navbar bg="light" variant="light">
+      <Navbar bg="light" variant="light" className="p-0 mb-5">
         <Container className="Navbar_Common">
           <Navbar.Brand href="#home">Productivity ++</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link className="Navbar_links">
-              <Link to="">Pomodoro</Link>
+              <Link to="/">Pomodoro</Link>
             </Nav.Link>
             <Nav.Link>Placeholder 1</Nav.Link>
             <Nav.Link>Placeholder 2</Nav.Link>

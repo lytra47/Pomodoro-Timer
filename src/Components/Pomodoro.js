@@ -14,6 +14,12 @@ function Pomodoro() {
   const [currentSetTime, setCurrentSetTime] = useState(1500);
   const [advice, setAdvice] = useState("");
 
+  const getAdvice = async () => {
+    const res = await fetch("https://api.adviceslip.com/advice");
+    const data = await res.json();
+    setAdvice(data.slip.advice);
+  };
+
   useEffect(() => {
     let interval = null;
 
@@ -28,13 +34,6 @@ function Pomodoro() {
 
     return () => clearInterval(interval);
   }, [isRunning, time]);
-
-  const getAdvice = async () => {
-    const res = await fetch("https://api.adviceslip.com/advice");
-    const data = await res.json();
-    setAdvice(data.slip.advice);
-  };
-  getAdvice();
 
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60)
