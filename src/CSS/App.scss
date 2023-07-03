@@ -1,3 +1,6 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +11,8 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: black;
+  text-decoration: none !important;
+  color: black !important;
 }
 
 .pomodoro_main_wrapper {
@@ -128,5 +131,63 @@ a {
       justify-content: space-evenly;
       width: 30%;
     }
+  }
+}
+
+.home_component {
+  padding: 5em;
+  .columns {
+    margin-bottom: 2em;
+  }
+}
+
+.columnLinks {
+  background-color: grey;
+  width: 100px;
+  height: 100px;
+}
+
+.wrapper_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7em, 14em));
+  justify-content: center;
+  grid-gap: 1.5em;
+  margin: 1rem;
+
+  .createwrapper:hover {
+    background-color: #0458b3;
+    cursor: pointer;
+  }
+  .create {
+    margin-top: 60%;
+  }
+  .container {
+    padding: 0;
+    background-color: $primary-color;
+    box-shadow: 0px 2px 8px 0px $secondary-color;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 21em;
+    .note_text_area {
+      background-color: #007bff00;
+      border: none;
+      width: 100%;
+      height: 100%;
+      resize: none; /* Disable resizing */
+      border-color: none;
+      box-shadow: none;
+    }
+    .note_text_area:hover {
+      border: none;
+      border-color: none;
+      box-shadow: none;
+    }
+    // position: relative;
+  }
+  button {
+    border: none;
+    width: 100%;
+    font-weight: bold;
   }
 }

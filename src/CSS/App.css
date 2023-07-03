@@ -8,8 +8,8 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: black;
+  text-decoration: none !important;
+  color: black !important;
 }
 
 .pomodoro_main_wrapper {
@@ -124,4 +124,60 @@ a {
   display: flex;
   justify-content: space-evenly;
   width: 30%;
+}
+
+.home_component {
+  padding: 5em;
+}
+.home_component .columns {
+  margin-bottom: 2em;
+}
+
+.columnLinks {
+  background-color: grey;
+  width: 100px;
+  height: 100px;
+}
+
+.wrapper_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7em, 14em));
+  justify-content: center;
+  grid-gap: 1.5em;
+  margin: 1rem;
+}
+.wrapper_grid .createwrapper:hover {
+  background-color: #0458b3;
+  cursor: pointer;
+}
+.wrapper_grid .create {
+  margin-top: 60%;
+}
+.wrapper_grid .container {
+  padding: 0;
+  background-color: #007bff;
+  box-shadow: 0px 2px 8px 0px #6c757d;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 21em;
+}
+.wrapper_grid .container .note_text_area {
+  background-color: rgba(0, 123, 255, 0);
+  border: none;
+  width: 100%;
+  height: 100%;
+  resize: none; /* Disable resizing */
+  border-color: none;
+  box-shadow: none;
+}
+.wrapper_grid .container .note_text_area:hover {
+  border: none;
+  border-color: none;
+  box-shadow: none;
+}
+.wrapper_grid button {
+  border: none;
+  width: 100%;
+  font-weight: bold;
 }/*# sourceMappingURL=App.css.map */
